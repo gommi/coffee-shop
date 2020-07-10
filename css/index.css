@@ -27,8 +27,14 @@ body{
 }
 
 .brand-title {
+    width: auto;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 25px;
-    margin: 5px;
 
     font-family: 'Merienda One', Helvetica, sans-serif;
     font-weight: 800;
@@ -51,11 +57,17 @@ body{
 }
 
 .navbar-links li a {
+    width: auto;
+    height: 15vh;
     display: flex;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 40px 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 30px;
 }
 
 .navbar-links li a:hover{
@@ -182,7 +194,6 @@ body{
     }
 
     .brand-title{
-        padding-top: 20px;
         font-size: 15px;
     }
 
@@ -205,7 +216,8 @@ body{
     }
 
     .navbar-links ul li a {
-        padding: 10px 10px;
+        width: auto;
+        height: 30px;
     }
 
     .navbar-links.active {
@@ -214,6 +226,8 @@ body{
         height: auto;
     }
 
+
+/*container tekst - welcome*/
     .tekst{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -248,12 +262,11 @@ body{
 @media screen and (min-width:768px) and (max-width:1024px){
     
     .navbar-links li a {
-        display: flex;
-        text-decoration: none;
-        color: #fff;
-        font-size: 15px;
-        padding: 35px 30px;
-    }
+        height: 15vh;
+
+        justify-content: center;
+        align-items: center;
+        }
     
     .contact{
         width: 60%;
@@ -278,7 +291,10 @@ body{
     }
 
     .navbar-links li a {
-        padding: 30px 30px;
+        height: 10vh;
+
+        justify-content: center;
+        align-items: center;
     }
 
     .contact{
