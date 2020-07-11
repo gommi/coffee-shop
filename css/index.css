@@ -3,6 +3,8 @@ body{
     padding: 0;
 }
 
+/*Banner block*/
+
 .container_banner{
     width: 100%;
     height: 100vh;
@@ -95,6 +97,8 @@ body{
     border-radius: 10px;
 }
 
+/*Welcome block*/
+
 .container_tekst{
     width: 100%;
     height: auto;
@@ -117,6 +121,8 @@ body{
     font-family: 'Merienda One', Helvetica, sans-serif;
 }
 
+/*foof container - picture*/
+
 .container_food{
     width: 100%;
     height: 70vh;
@@ -126,6 +132,8 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+/*container contact*/
 
 .container_contact{
     width: 100%;
@@ -141,6 +149,8 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 100px;
+
+    z-index: 1;
 }
 
 .contact > p{
@@ -151,6 +161,8 @@ body{
     font-family: 'Merienda One', Helvetica, sans-serif;
 }
 
+        /*map container*/
+
 .maps{
     width: 50%;
     height: 500px;
@@ -159,9 +171,12 @@ body{
     margin-right: 100px;
 }
 
+/*Footer block*/
+
 .container_footer{
     width: 100%;
     height: auto;
+    text-decoration: none;
 
     background-color: black;
     font-family: 'Merienda One', Helvetica, sans-serif;
@@ -176,7 +191,6 @@ body{
 }
 
 .container_footer > p{
-    color: white;
     display: flex;
     justify-content: center;
 
@@ -185,7 +199,13 @@ body{
     padding: 0 0 30px 0;
 }
 
+.container_footer > p > a{
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and (min-width:320px) and (max-width:480px){
+    /*Navbar block*/
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -195,6 +215,8 @@ body{
 
     .brand-title{
         font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .toggle-button {
@@ -216,8 +238,7 @@ body{
     }
 
     .navbar-links ul li a {
-        width: auto;
-        height: 30px;
+        padding-top: 10px;
     }
 
     .navbar-links.active {
@@ -227,12 +248,14 @@ body{
     }
 
 
-/*container tekst - welcome*/
+    /*container tekst - welcome*/
     .tekst{
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 30px;
     }
+
+    /*Contact block*/
 
     .container_contact{
         flex-direction: column;
@@ -245,6 +268,8 @@ body{
         padding-left: 30px;
     }
 
+    /*Maps block*/
+
     .maps{
         width: 250px;
         height: 250px;
@@ -253,21 +278,18 @@ body{
         margin-left: 35px;
         margin-bottom: 50px;
     }
-
-    .name{
-        padding-top: 15px;
-    }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px){
-    
+    /*Navbar block*/
     .navbar-links li a {
         height: 15vh;
 
         justify-content: center;
         align-items: center;
         }
-    
+
+    /*Contact block*/
     .contact{
         width: 60%;
         height: auto;
@@ -275,6 +297,7 @@ body{
         padding-left: 30px;
     }
 
+    /*Maps block*/
     .maps{
         width: 50%;
         height: 400px;
@@ -285,7 +308,7 @@ body{
 }
 
 @media screen and (min-width:1824px){
-
+    /*navbar block*/
     .navbar{
         height: 10vh;
     }
@@ -297,6 +320,8 @@ body{
         align-items: center;
     }
 
+    /*Contact block*/
+
     .contact{
         width: 60%;
         height: auto;
@@ -304,6 +329,7 @@ body{
         padding-left: 200px;
     }
 
+    /*Map block*/
     .maps{
         width: 50%;
         height: 500px;
@@ -311,4 +337,22 @@ body{
         margin-top: 130px;
         margin-right: 200px;
     }
+}
+
+/*Animate*/
+
+[data-scroll]{
+    transition: all 2s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+[data-scroll="out"]{
+    opacity: 0;
+
+    transform: translateY(200px);
 }
