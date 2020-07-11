@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--smooth-->
+    <!--Smooth scroll jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!--Font family-->
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
 
-    
+    <!--Mapbox script-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <!--Mapbox css link-->
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
 
+    <!--AOS css link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>COFFEE AND BAKERY SHOP</title>
+
 </head>
 
 <body>
 
     <header>
+
+        <!--container banner and navbar-->
+
         <div class="container_banner">
 
             <nav class="navbar">
-                <div class="brand-title">COFFEE AND BAKERY SHOP</div>
+                <div class="brand-title" data-aos="fade-right" data-aos-delay="100">COFFEE AND BAKERY SHOP</div>
                 <a href="#" class="toggle-button">
                   <span class="bar"></span>
                   <span class="bar"></span>
@@ -34,9 +40,9 @@
                 </a>
                 <div class="navbar-links">
                   <ul>
-                    <li><a href="#section1">WELCOME</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="#section2">CONTACT US</a></li>
+                    <li data-aos="fade-left" data-aos-delay="100"><a href="#section1">WELCOME</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200"><a href="menu.html">MENU</a></li>
+                    <li data-aos="fade-left" data-aos-delay="300"><a href="#section2">CONTACT US</a></li>
                   </ul>
                 </div>
               </nav>
@@ -45,7 +51,8 @@
     </header>
 
     <main>
-        <div class="container_tekst" id="section1">
+        <!--Container sa Welcome tekstom-->
+        <div class="container_tekst" id="section1" data-scroll>
             <div class="tekst">
                 <h1>WELCOME</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
@@ -64,10 +71,12 @@
             </div>
         </div>
 
+        <!--Container food - slika u css-u -->
+
         <div class="container_food"></div>
 
         <div class="container_contact" id="section2">
-            <div class="contact">
+            <div class="contact" data-aos="flip-down" data-aos-delay="300">
                 <h1>Location</h1>
 
                 <p>Ul. Neka ulica bb, <br>Negdje <br>Republika Srpska, BiH</p>
@@ -88,22 +97,47 @@
 
                 <p>info@coffeandbakeryshop.com</p>
         </div>
-        <div class="maps" id="map"></div>
+
+        <!--Mapa-->
+
+        <div class="maps" id="map" data-aos="flip-down" data-aos-delay="300"></div>
 
         <script src="javascript/map.js"></script>
     </div>
     </main>
 
+    <!--Footer-->
+
     <footer>
         <div class="container_footer">
             <h4>COFFEE AND BAKERY SHOP</h4>
             <br>
-            <p>FACEBOOK | INSTAGRAM</p>
+            <p><a href="https://www.google.com/">FACEBOOK </a> | <a href="https://www.google.com/"> INSTAGRAM</a></p>
         </div>
     </footer>
 
+    <!--JavaScript-->
+
     <script src="javascript/index.js"></script>
     <script src="javascript/smooth.js"></script>
+
+    <!--Library scrollout-->
+
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+        <!--Called object from the library-->
+        <script>
+            ScrollOut(); 
+        </script>
+
+    <!--Library aos-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!--Called object from the library-->
+        <script>
+            AOS.init();
+        </script>
     
 </body>
 </html>
