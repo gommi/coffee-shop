@@ -9,29 +9,43 @@ body{
     width: 100%;
     height: 100vh;
 
-    background-image: url("../img/devin-avery-B3u-SJbCy0U-unsplash.jpg");
+    background-image: url("../img/tim-st-martin-IjnAc0vyqGs-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+.coffee{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+
+    color: white;
+
+    font-family: 'Merienda One', Helvetica, sans-serif;
+    font-size: 100px;
+
+    border: 10px white solid;
+}
+
 /*Navbar*/
 
 .navbar {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-
-    opacity: 0.8;
 }
 
 .brand-title {
     width: auto;
     height: 15vh;
+
+    margin-left: 20px;
 
     display: flex;
     justify-content: center;
@@ -61,7 +75,7 @@ body{
 
 .navbar-links li a {
     width: auto;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     text-decoration: none;
     color: #fff;
@@ -207,12 +221,18 @@ body{
 }
 
 @media screen and (min-width:320px) and (max-width:480px){
+
+    .coffee{
+        display: none;
+    }
     /*Navbar block*/
     .navbar {
+        height: 15vh;
         flex-direction: column;
         align-items: flex-start;
 
         margin-right: 0;
+        background-color: #000;
     }
 
     .brand-title{
@@ -240,12 +260,13 @@ body{
     }
 
     .navbar-links ul li a {
+        width: 100%;
         padding-top: 10px;
+        background-color: #000;
     }
 
     .navbar-links.active {
         display: flex;
-        background-color: #000000;
         height: auto;
     }
 
