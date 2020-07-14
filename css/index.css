@@ -43,9 +43,12 @@ body{
 
 .brand-title {
     width: auto;
-    height: 15vh;
+    height: 10vh;
 
+    padding-top: 10px;
     margin-left: 20px;
+
+    padding-bottom: 10px;
 
     display: flex;
     justify-content: center;
@@ -96,7 +99,7 @@ body{
 
 .toggle-button {
     position: absolute;
-    top: 25px;
+    padding-top: 10px;
     right: 10px;
     display: none;
     flex-direction: column;
@@ -222,12 +225,19 @@ body{
 
 @media screen and (min-width:320px) and (max-width:480px){
 
+    .container_banner{
+        background-image: url("../img/dva.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .coffee{
         display: none;
     }
     /*Navbar block*/
     .navbar {
-        height: 15vh;
+        height: 10vh;
         flex-direction: column;
         align-items: flex-start;
 
@@ -237,9 +247,8 @@ body{
 
     .brand-title{
         font-size: 15px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
+        margin-top: 20;
+        }
 
     .toggle-button {
         display: flex;
